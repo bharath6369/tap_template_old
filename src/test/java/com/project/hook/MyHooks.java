@@ -4,15 +4,15 @@ import java.util.Properties;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
-import com.project.driverfactory.DriverFactory;
-import com.project.utils.CommonUtils;
-import com.project.utils.ConfigReader;
+import com.scaledFoundations.driverfactory.DriverFactory;
+import com.scaledFoundations.utils.CommonUtils;
+import com.scaledFoundations.utils.ConfigReader;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 
 
-public class MyHooks {
+public class MyHooks extends DriverFactory {
 	
 	WebDriver driver;
 	private static Logger logger = LogManager.getLogger(MyHooks.class);
